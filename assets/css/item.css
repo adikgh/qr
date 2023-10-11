@@ -1,0 +1,192 @@
+
+
+
+
+/*  */
+.itc_z{
+   position: relative;
+   width: 100%;
+}
+
+.itc_zt{
+   position: relative;
+   width: 100%;
+   margin-bottom: 8px;
+   font-size: 14px;
+   font-weight: 600;
+}
+
+.itc_zc{
+   position: relative;
+   width: 100%;
+   border-radius: 8px;
+   border: 1px solid var(--gr4);
+   padding: 4px 16px;
+}
+.itc_zci{
+   padding: 12px 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: stretch;
+   cursor: pointer;
+}
+.itc_zci:last-child{
+   border-top: 1px solid var(--gr2);
+}
+.itc_zci i{
+   font-size: 18px;
+}
+
+.itc_zcil, .itc_zcir{
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   padding-top: 5px;
+}
+.itc_zcir{
+   padding-top: 0;
+   align-items: center;
+}
+
+.itc_zcic{
+   position: relative;
+   width: calc(100% - 80px);
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   flex-direction: column;
+}
+.itc_zcic p{
+   font-size: 14px;
+   font-weight: 600;
+}
+.itc_zcic span{
+   display: inline-block;
+   font-size: 14px;
+   font-weight: 400;
+   margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+.itc_lg{
+   position: relative;
+   width: 100%;
+}
+.itc_lgi{
+   padding: 40px 0;
+   border-top: 1px solid var(--gr4);
+   cursor: pointer;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.itc_lgi:last-child{
+   border-bottom: 1px solid var(--gr4);
+}
+.itc_lgi:hover h4{
+   text-decoration: underline;
+}
+
+.itc_lgi i{
+   font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+.itc_ltv{
+   position: relative;
+   width: 100%;
+}
+.itc_ltv2{}
+
+.itc_ltv .head_c{
+   padding-top: 40px;
+   padding-bottom: 32px;
+}
+
+.item{
+   width: 225px;
+}
+.item:after{
+   display: none;
+}
+.item_c{
+   padding-top: 0;
+}
+
+.item_con{
+   padding-top: 8px;
+}
+
+
+
+
+.mySwiper_5 .item{
+   width: 160px;
+   min-height: 160px;
+}
+
+.swiper2 .item{
+   width: calc(25% - 55px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.img_inc_block .pop_bl_c{
+   min-width: 1440px;
+}
+
+.img_inc_block .it_cmir{
+   width: 100%;
+   max-height: 75vh;
+   max-width: 100%;
+   /* width: auto; */
+   padding-bottom: 75vh;
+   background: var(--tr);
+}
+.img_inc_block .it_cmir div{
+   background-size: auto 100%;
+}
+
+
+
+
+
+
+
+.pop_bl_c .img_inc_back{
+   position: absolute;
+   top: 20px;
+   right: 20px;
+}
