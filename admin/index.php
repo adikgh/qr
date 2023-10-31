@@ -2,7 +2,7 @@
 
 	// 
 	if (!$user_id) header('location: /admin/sign.php');
-	else header('location: /admin/products/');
+	else header('location: /admin/company/');
 	 
 	
 	// site setting

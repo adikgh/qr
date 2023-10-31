@@ -1,11 +1,10 @@
    <!--  -->
    <div class="ucours_t">
       <div class="ucours_tl">
-         <!-- <div class="btn btn_cl product_add_pop"><i class="fal fa-plus"></i><span>Быстрое добавление</span></div> -->
          <div class="ucours_tm">
             <div class="btn btn_cl product_add_pop">
                <i class="fal fa-plus"></i>
-               <span>Добавить товар</span>
+               <span>Тағамды қосу</span>
             </div>
          </div>
          <div class="ucours_tm">
@@ -30,72 +29,6 @@
                </a>
             </div>
          </div>
-         <div class="ucours_tm">
-            <div class="ucours_tmas"></div>
-            <div class="ucours_tmi <?=($filter==0?'ucours_tm_act':'')?>">
-               <i class="fal fa-inventory ucours_tmic"></i>
-               <span>Категория</span>
-               <i class="fal fa-angle-down ucours_tmis"></i>
-            </div>
-            <div class="menu_c ucours_tma">
-               <? $catalog = db::query("select * from product_catalog"); ?>
-               <? while ($catalog_d = mysqli_fetch_assoc($catalog)): ?>
-                  <a class="menu_ci" href="?catalog=<?=$catalog_d['id']?>">
-                     <div class="menu_cin"><i class="fal fa-square"></i></div>
-                     <div class="menu_cih"><?=$catalog_d['name_ru']?></div>
-                  </a>
-               <? endwhile ?>
-            </div>
-         </div>
-         <div class="ucours_tm">
-            <div class="ucours_tmas"></div>
-            <div class="ucours_tmi <?=($filter==0?'ucours_tm_act':'')?>">
-               <i class="fal fa-copyright ucours_tmic"></i>
-               <span>Бренд</span>
-               <i class="fal fa-angle-down ucours_tmis"></i>
-            </div>
-            <div class="menu_c ucours_tma">
-               <? $ch_brand = db::query("select * from product_ch_brand"); ?>
-               <? while ($ch_brand_d = mysqli_fetch_assoc($ch_brand)): ?>
-                  <a class="menu_ci" href="?brand=<?=$ch_brand_d['id']?>">
-                     <div class="menu_cin"><i class="fal fa-square"></i></div>
-                     <div class="menu_cih"><?=$ch_brand_d['name']?></div>
-                  </a>
-               <? endwhile ?>
-            </div>
-         </div>
-         <? if ($catalog_id || $brand_id): ?>
-            <div class="ucours_tm">
-               <a class="ucours_tmi " href="/products/">
-                  <i class="fal fa-times ucours_tmic"></i>
-                  <span>Сбросить</span>
-               </a>
-            </div>
-         <? else: ?>
-            <div class="ucours_tm">
-               <div class="ucours_tmas"></div>
-               <div class="ucours_tmi <?=($filter==0?'ucours_tm_act':'')?>">
-                  <i class="fal fa-warehouse-alt ucours_tmic"></i>
-                  <span>Склад</span>
-                  <i class="fal fa-angle-down ucours_tmis"></i>
-               </div>
-               <div class="menu_c ucours_tma">
-                  <? $warehouses = db::query("select * from product_warehouses"); ?>
-                  <? while ($warehouses_d = mysqli_fetch_assoc($warehouses)): ?>
-                     <a class="menu_ci" href="/products/warehouses.php?id=<?=$warehouses_d['id']?>">
-                        <div class="menu_cin"><i class="fal fa-square"></i></div>
-                        <div class="menu_cih"><?=$warehouses_d['name']?></div>
-                     </a>
-                  <? endwhile ?>
-               </div>
-            </div>
-            <!-- <div class="ucours_tm">
-               <div class="ucours_tmi <?=($filter==0?'ucours_tm_act':'')?>">
-                  <i class="fal fa-filter ucours_tmic"></i>
-                  <span>Все фильтры</span>
-               </div>
-            </div> -->
-         <? endif ?>
       </div>
       <? if ($page_all > 1): ?>
          <div class="ucours_tr">

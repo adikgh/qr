@@ -1,0 +1,14 @@
+/*  */
+body{
+
+   background: var(--gr);
+}
+
+
+.app_body{
+   margin-bottom: 0 !important;
+   padding-bottom: 0 !important;
+}
+.footer{
+   margin-top: 0 !important;
+}

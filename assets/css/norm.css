@@ -186,9 +186,9 @@ body{
 .app_body{
 	position: relative;
 	z-index: 110;
-   width: 100%;
+	width: 100%;
 	min-height: 100vh;
-	padding-top: 40px;
+	/* padding-top: 40px; */
 }
 @media (max-width: 500px) {
 	.app{
@@ -1681,12 +1681,12 @@ textarea.form_txt{
 .footer{
 	position: relative;
 	width: 100%;
-	background: var(--gr1);
+	background: var(--gr);
 	margin-top: 60px;
 }
 @media (max-width: 500px) {
 	.footer{margin-top:40px}
-	.body_user .footer{display:none}
+	/* .body_user .footer{display:none} */
 }
 
 /*  */

@@ -36,9 +36,9 @@
 <!-- css -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" />
 <link rel="stylesheet" href="/assets/pl/fontawesome/css/all.min.css" />
-<link rel="stylesheet" type="text/css" href="https://lighterior.kz/assets/css/anim.css?v=<?=$ver?>" />
-<? if ($site_set['swiper'] == true): ?> <link rel="stylesheet" href="https://lighterior.kz/assets/pl/swiper-bundle.min.css" /> <? endif ?>
-<? if ($site_set['plyr'] == true): ?> <link rel="stylesheet" href="https://lighterior.kz/assets/pl/plyr.css" /> <? endif ?>
+<link rel="stylesheet" type="text/css" href="/assets/css/anim.css?v=<?=$ver?>" />
+<? if ($site_set['swiper'] == true): ?> <link rel="stylesheet" href="/assets/pl/swiper-bundle.min.css" /> <? endif ?>
+<? if ($site_set['plyr'] == true): ?> <link rel="stylesheet" href="/assets/pl/plyr.css" /> <? endif ?>
 
 <!-- main css -->
 <? foreach ($scss as $i): ?> <link rel="stylesheet" type="text/css" href="/assets/css/admin/<?=$i?>.css?v=<?=$ver?>" /> <? endforeach ?>
@@ -46,20 +46,19 @@
 
 
 <!-- js -->
-<script src="https://lighterior.kz/assets/pl/jquery.min.js"></script>
-<script src="https://lighterior.kz/assets/pl/jquery.lazy.min.js"></script>
-<script src="https://lighterior.kz/assets/pl/jquery.lazy.plugins.min.js"></script>
-<script src="https://lighterior.kz/assets/pl/jquery.mask.min.js"></script>
-<? if ($site_set['swiper'] == true): ?> <script src="https://lighterior.kz/assets/pl/swiper-bundle.min.js"></script> <? endif ?>
-<? if ($site_set['plyr'] == true): ?> <script src="https://lighterior.kz/assets/pl/plyr.polyfilled.js"></script> <? endif ?>
-<? if ($site_set['aos'] == true): ?> <script src="https://lighterior.kz/assets/pl/aos.js"></script> <? endif ?>
-<? if ($site_set['autosize'] == true): ?> <script src="https://lighterior.kz/assets/pl/autosize.min.js"></script> <? endif ?>
+<script src="/assets/pl/jquery.min.js"></script>
+<script src="/assets/pl/jquery.lazy.min.js"></script>
+<script src="/assets/pl/jquery.lazy.plugins.min.js"></script>
+<script src="/assets/pl/jquery.mask.min.js"></script>
+<? if ($site_set['swiper'] == true): ?> <script src="/assets/pl/swiper-bundle.min.js"></script> <? endif ?>
+<? if ($site_set['plyr'] == true): ?> <script src="/assets/pl/plyr.polyfilled.js"></script> <? endif ?>
+<? if ($site_set['aos'] == true): ?> <script src="/assets/pl/aos.js"></script> <? endif ?>
+<? if ($site_set['autosize'] == true): ?> <script src="/assets/pl/autosize.min.js"></script> <? endif ?>
 <script src="/assets/js/fun.js?v=<?=$ver?>"></script>
 
 
 <!-- analitics -->
 <? if ($site['metrika'] != null): ?>
-<!-- Yandex.Metrika counter -->
 	<script type='text/javascript'>
 		(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
 		m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
@@ -69,7 +68,6 @@
 <? endif ?>
 
 <? if ($site['analitics'] != null): ?>
-<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168445294-3"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
@@ -80,7 +78,6 @@
 <? endif ?>
 
 <? if ($site['pixel'] != null): ?>
-<!-- Facebook Pixel Code -->
 	<script>
 	!function(f,b,e,v,n,t,s)
 	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
